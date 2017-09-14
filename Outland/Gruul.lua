@@ -36,7 +36,7 @@ L:RegisterTranslations("enUS", function() return {
 	engage_message = "%s Engaged!",
 
 	grow = "Grow",
-	grow_desc = "Count and warn for Grull's grow.",
+	grow_desc = "Count and warn for Gruul's grow.",
 	grow_message = "Grows: (%d)",
 	grow_bar = "Grow (%d)",
 
@@ -64,7 +64,7 @@ L:RegisterTranslations("frFR", function() return {
 	engage_message = "%s engagé !",
 
 	grow = "Croissance",
-	grow_desc = "Compte les Croissances de Grull et prévient de leurs arrivées.",
+	grow_desc = "Compte les Croissances de Gruul et prévient de leurs arrivées.",
 	grow_message = "Croissance : (%d)",
 	grow_bar = "Croissance (%d)",
 
@@ -232,7 +232,7 @@ L:RegisterTranslations("ruRU", function() return {
 	engage_message = "Контакт с %s!",
 
 	grow = "Расти!",
-	grow_desc = "Count and warn for Grull's grow.",
+	grow_desc = "Count and warn for Gruul's grow.",
 	grow_message = "Раста: (%d)",
 	grow_bar = "Расти! (%d)",
 
