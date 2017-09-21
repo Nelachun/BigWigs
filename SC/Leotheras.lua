@@ -390,6 +390,7 @@ function mod:CHAT_MSG_MONSTER_YELL(msg)
 		end
 		if db.whirlwind then
 			self:WhirlwindBar()
+			--TODO: self:ScheduleEvent("2ndWW", self.WhirlwindBar, xx, self)
 		end
 	elseif msg == L["phase_trigger"] then
 		if db.phase then
@@ -407,6 +408,7 @@ function mod:CHAT_MSG_MONSTER_YELL(msg)
 			self:TriggerEvent("BigWigs_StopBar", self, L["whirlwind_bar"])
 			self:TriggerEvent("BigWigs_StopBar", self, L["whirlwind_bar2"])
 			self:ScheduleEvent("BWAfterDemon", self.WhirlwindBar, 60, self)
+			--TODO: self:ScheduleEvent("2ndWW", self.WhirlwindBar, 60+xx, self)
 		end
 		if db.whisper then
 			self:Bar(L["whisper_soon"], 23, "Spell_Shadow_ManaFeed")
@@ -430,6 +432,7 @@ function mod:DemonSoon()
 end
 
 function mod:WhirlwindBar()
+	-- TODO: Fix this timer here to the correct number
 	self:Bar(L["whirlwind_bar2"], 15, "Ability_Whirlwind")
 	self:ScheduleEvent("ww2", "BigWigs_Message", 15, L["whirlwind_warn"], "Attention")
 end
