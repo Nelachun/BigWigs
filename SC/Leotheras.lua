@@ -429,8 +429,7 @@ function mod:DemonSoon()
 	self:Bar(L["demon_nextbar"], 45, "Spell_Shadow_Metamorphosis")
 end
 
-function mod:WhirlwindBar() --Handle ww cooldown, called on start, ww end, and phase change to human
-	-- TODO: Fix this timer here to the correct number, create a new function if there are two seperate timers
+function mod:WhirlwindBar() 
 	self:Bar(L["whirlwind_bar2"], 15, "Ability_Whirlwind")
 	self:ScheduleEvent("ww2", "BigWigs_Message", 15, L["whirlwind_warn"], "Attention")
 end
